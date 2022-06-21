@@ -1,0 +1,13 @@
+const mark = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    mass: 78,
+    height: 169,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * this.height)
+        return this.bmi
+    },
+};
+
+mark.calcBMI();
+console.log(mark.calcBMI)
