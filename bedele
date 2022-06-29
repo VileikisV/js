@@ -1,31 +1,24 @@
-const mark = {
-    fullName: 'Mark Miller',
-    mass: 78,
-    height: 1.69,
-    calcBMI: function () {
-        this.bmi = this.mass / (this.height * this.height)
-        return this.bmi
-    },
-};
+// pirmas variantas
 
-mark.calcBMI();
-console.log(`Mark's -${(mark.bmi)}`)
-
-const john = {
-    fullName: 'John Smith',
-    mass: 1000,
-    height: 1.95,
-    calcBMI: function () {
-        this.bmi = this.mass / (this.height * this.height)
-        return this.bmi
-    }
-};
-
-john.calcBMI();
-console.log(`John's - ${(john.bmi)}`)
-
-if (mark.bmi > john.bmi) {
-    console.log(`${mark.fullName}'s BMI ${mark.bmi} is higher than ${john.fullName}'s ${john.bmi}`)
-} else {
-    console.log(`${john.fullName}'s BMI ${john.bmi} is higher than ${mark.fullName}'s ${mark.bmi}`)
+function autoFunkcija(a, b, c) {
+  const autoSalonas = `Auto salone galima isigyti nauju ${a}, devetu ${b} ir senu ${c} masinu.`;
+  return autoSalonas;
 }
+
+const finisas = autoFunkcija("audi", "bmw", "mersas");
+
+console.log(finisas);
+
+
+// antras variantas
+
+function autoFunkcija2(a, b, c) {
+  const autoSalonas2 = `Auto salone galima isigyti nauju ${a}, devetu ${b} ir senu ${c} masinu.`;
+  console.log(autoSalonas2);
+}
+
+autoFunkcija2("audi", "bmw", "mersas");
+
+
+
+//abiem atvejais gaunu toki pat sakini consolej.
